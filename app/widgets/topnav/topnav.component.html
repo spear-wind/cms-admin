@@ -1,0 +1,27 @@
+<nav class="navbar navbar-default navbar-static-top" role="navigation" id="topNav">
+  <div class="row">
+    <!--<div class="col-sm-2 col-md-2">
+        <h1>SpearWind CMS</h1>
+    </div>
+    <div class="col-sm-7 col-md-7">
+      <span id="currentSite">http://www.spearwind.io</span>
+    </div>
+    <div class="col-sm-3 col-md-3">
+      <select name="currentSite">
+        <option value="http://www.spearwind.io">http://www.spearwind.io</option>
+        <option value="http://www.therealestatecrm.com">http://www.therealestatecrm.com</option>
+      </select>
+    </div>-->
+    <div class="float_l">
+      <h1>SpearWind CMS</h1>
+    </div>
+    <div class="float_l">
+      <span id="currentSite">{{currentSite}}</span>
+    </div>
+    <div class="float_r">
+      <select name="currentSite" (change)="changeSite($event)">
+        <option *ngFor="let site of sites" [value]="site">{{site}}</option>
+      </select>
+    </div>
+  </div>
+</nav>

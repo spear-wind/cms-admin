@@ -1,0 +1,115 @@
+/* COMMON */
+body, html {
+  height: 100%;
+  background-color: #fff;
+}
+.container {
+  margin-left: 0;
+  margin-right: 0;
+}
+.float_l {
+  float: left;
+}
+.float_r {
+  float: right;
+}
+#mainApp {
+}
+#mainContent {
+  position: inherit;
+  margin: 0 0 0 250px;
+  padding: 0 30px;
+  border-left: 1px solid #999;
+}
+#mainContent #pageHeader {
+  border-bottom: 1px solid #999;
+}
+#mainContent #pageHeaderActions {
+  padding-top: 35px;
+}
+#mainContent #pageHeaderActions .add {
+
+}
+
+/* HEADER
+header {
+  background-color: #0000FF;
+  padding: 20px;
+}
+header h1 {
+  color: #fff;
+  margin: 0;
+} */
+/* END HEADER */
+
+/* HEADER NAV
+#headerNav {
+  color: #fff;
+  float: right;
+}
+#headerNav a {
+  color: #fff;
+}
+#headerNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#headerNav li {
+  float: left;
+}
+#headerNav li a {
+  display: block;
+  text-align: center;
+  padding: 0 20px;
+}
+#headerNav .loggedInUserName {
+  font-size: 1.4em;
+} */
+/* END HEADER NAV */
+
+/* TOP NAV */
+#topNav {
+  background-color: #fff;
+  padding: 0 15px;
+  border-bottom: 1px solid #999;
+  height: 100px;
+}
+#topNav h1 {
+  font-size: 18px;
+  padding: 0 0 0 15px;
+  margin: 0;
+  width: 250px;
+}
+#topNav .row {
+  margin: 25px 0 0 0;
+}
+.navbar {
+  margin-bottom: 0;
+}
+#topNav #currentSite {
+  font-weight: bold;
+  min-width: 250px;
+}
+/* END TOP NAV */
+
+/* SIDE MENU */
+#sidebarNav {
+  z-index: 1;
+  position: absolute;
+  width: 250px;
+  height: 100vh;
+}
+#sidebarNav .col-sm-2, .col-md-2 {padding-right: 0;}
+.navbar-default {background-color: #aaa;}
+.panel-default .panel-heading {background-color: #aaa; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom: 1px solid #fff;}
+.panel-title {color: #fff; font-weight: normal;}
+.panel-group .panel+.panel {margin-top: 0;}
+.panel-group .panel {border-radius: 0; border: 0;}
+.glyphicon { margin-right:10px; }
+.panel-body { padding:0px; }
+.panel-body a {color: #fff;}
+.panel-body table {background-color: #aaa; opacity: 0.8; color: #fff;}
+.panel-body table tr td { padding-left: 25px; border-top: 0; border-bottom: 1px solid #fff;}
+.panel-body .table {margin-bottom: 0px; }
+/* END SIDE MENU */

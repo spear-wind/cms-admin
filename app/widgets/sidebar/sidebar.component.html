@@ -1,0 +1,224 @@
+<nav id="sidebarNav" class="navbar-default" role="navigation">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" [routerLink]="['/home']"><span class="glyphicon glyphicon-th">
+                </span>Dashboard</a>
+            </h4>
+        </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseContent"><span class="glyphicon glyphicon-th-list">
+                  </span>Content</a>
+              </h4>
+          </div>
+          <div id="collapseContent" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <table class="table">
+                    <tr>
+                        <td>
+                            <span class="glyphicon glyphicon-plus"></span><a [routerLink]="['/content/add']">Add Content</a>
+                        </td>
+                    </tr>
+                      <tr>
+                          <td>
+                              <span class="glyphicon glyphicon-align-justify"></span><a [routerLink]="['/content/all']">All Content</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <span class="glyphicon glyphicon-arrow-up"></span><a [routerLink]="['/content/top']">Top Content</a>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapsePages"><span class="glyphicon glyphicon-th-list">
+                  </span>Pages</a>
+              </h4>
+          </div>
+          <div id="collapsePages" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <table class="table">
+                      <tr>
+                          <td>
+                              <span class="glyphicon glyphicon-plus"></span><a [routerLink]="['/pages/add']">Add Page</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <span class="glyphicon glyphicon-align-justify"></span><a [routerLink]="['/pages/all']">Pages</a>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseBlog"><span class="glyphicon glyphicon-th-list">
+                  </span>Blog</a>
+              </h4>
+          </div>
+          <div id="collapseBlog" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <table class="table">
+                     <tr>
+                        <td>
+                            <span class="glyphicon glyphicon-plus"></span><a [routerLink]="['/posts/add']">Add Post</a>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                            <span class="glyphicon glyphicon-align-justify"></span><a [routerLink]="['/posts/all']">Posts</a>
+                        </td>
+                     </tr>
+                      <tr>
+                          <td>
+                              <span class="glyphicon glyphicon-th-large"></span><a [routerLink]="['/posts/categories']">Categories</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <span class="glyphicon glyphicon-th-large"></span><a [routerLink]="['/posts/tags']">Tags</a>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseForms"><span class="glyphicon glyphicon-th-list">
+                  </span>Forms</a>
+              </h4>
+          </div>
+          <div id="collapseForms" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <table class="table">
+                     <tr>
+                        <td>
+                            <span class="glyphicon glyphicon-plus"></span><a [routerLink]="['/forms/add']">Add Form</a>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                            <span class="glyphicon glyphicon-align-justify"></span><a [routerLink]="['/forms/all']">Forms</a>
+                        </td>
+                     </tr>
+                  </table>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseMedia"><span class="glyphicon glyphicon-film">
+                  </span>Media</a>
+              </h4>
+          </div>
+          <div id="collapseMedia" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <table class="table">
+                      <tr>
+                          <td>
+                              <span class="glyphicon glyphicon-plus"></span><a [routerLink]="['/media/add']">Add Media</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <span class="glyphicon glyphicon-film"></span><a [routerLink]="['/media/all']">Library</a>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseUsers"><span class="glyphicon glyphicon-user">
+                  </span>Users</a>
+              </h4>
+          </div>
+          <div id="collapseUsers" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <table class="table">
+                      <tr>
+                          <td>
+                              <span class="glyphicon glyphicon-plus"></span><a [routerLink]="['/users/add']">Add User</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <span class="glyphicon glyphicon-user"></span><a [routerLink]="['/users/all']">Users</a>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseReports"><span class="glyphicon glyphicon-file">
+                  </span>Reports</a>
+              </h4>
+          </div>
+          <div id="collapseReports" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <table class="table">
+                      <tr>
+                          <td>
+                              <span class="glyphicon glyphicon-file"></span><a [routerLink]="['/reports/usage']">Content Usage</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <span class="glyphicon glyphicon-file"></span><a [routerLink]="['/reports/activity']">User Activity</a>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseSettings"><span class="glyphicon glyphicon-cog">
+                  </span>Settings</a>
+              </h4>
+          </div>
+          <div id="collapseSettings" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <table class="table">
+                      <tr>
+                          <td>
+                              <span class="glyphicon glyphicon-cog"></span><a [routerLink]="['/settings/site']">Site</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <span class="glyphicon glyphicon-cog"></span><a [routerLink]="['/settings/theme']">Theme</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <span class="glyphicon glyphicon-cog"></span><a [routerLink]="['/settings/notifications']">Notifications</a>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+</nav>

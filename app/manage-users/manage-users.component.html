@@ -1,0 +1,19 @@
+<topnav></topnav>
+
+<sidebar></sidebar>
+
+<div id="mainContent">
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <h1>Users</h1>
+    </div>
+  </div>
+    <p>You're logged in with JWT!!</p>
+    <div>
+        Users from secure api end point:
+        <ul>
+            <li *ngFor="let user of users">{{user.firstName}} {{user.lastName}}</li>
+        </ul>
+    </div>
+    <p><a [routerLink]="['/login']">Logout</a></p>
+</div>
