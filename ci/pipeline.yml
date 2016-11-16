@@ -1,0 +1,17 @@
+---
+resources:
+- name: cms-admin
+  type: git
+  source:
+    uri: https://github.com/spear-wind/cms-admin
+    branch: master
+
+
+
+jobs:
+- name: test-app
+  plan:
+  - get: cms-admin
+    trigger: true
+  - task: test
+    file: cms-admin/ci/test.yml

@@ -1,5 +1,8 @@
-# spearwind-cms
+# cms-admin
 SpearWind CMS Interface
 
-1 - npm install
-2 - npm start
+```
+npm install
+npm test
+npm start
+```
