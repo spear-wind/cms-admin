@@ -4,12 +4,20 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-    repository: pcfsecurity/go-glide
+    repository: node
     tag: latest
 
 inputs:
-- name: cms
-  path: go/src/github.com/spear-wind/cms
+- name: cms-admin
 
 run:
-  path: go/src/github.com/spear-wind/cms/ci/run-unit-tests.sh
+  path: sh
+  args:
+  - -exc
+  - |
+    ls -la
+    npm version
+    cd cms-admin
+    ls -la
+    npm install
+    npm test
