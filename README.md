@@ -1,5 +1,12 @@
 # cms-admin
+
+
+[![Test Status](http://ci.dmalone.io/api/v1/teams/spearwind/pipelines/cms-admin/jobs/test-app/badge)](http://ci.dmalone.io/teams/spearwind/pipelines/cms-admin)
+
+
 SpearWind CMS Interface
+
+## Build, Test, and Run
 
 ```
 npm install
