@@ -8,18 +8,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var SidebarComponent = (function () {
     function SidebarComponent() {
     }
-    SidebarComponent = __decorate([
-        core_1.Component({
-            selector: 'sidebar',
-            templateUrl: './app/widgets/sidebar/sidebar.component.html'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], SidebarComponent);
     return SidebarComponent;
 }());
+SidebarComponent = __decorate([
+    core_1.Component({
+        selector: 'sidebar',
+        templateUrl: './app/widgets/sidebar/sidebar.component.html'
+    }),
+    __metadata("design:paramtypes", [])
+], SidebarComponent);
 exports.SidebarComponent = SidebarComponent;
 //# sourceMappingURL=sidebar.component.js.map

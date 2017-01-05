@@ -10,12 +10,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var index_1 = require("../_services/index");
-var AllPostsComponent = (function () {
-    function AllPostsComponent(userService) {
+var RegisterComponent = (function () {
+    function RegisterComponent(userService) {
         this.userService = userService;
         this.users = [];
     }
-    AllPostsComponent.prototype.ngOnInit = function () {
+    RegisterComponent.prototype.ngOnInit = function () {
         var _this = this;
         // get users from secure api end point
         this.userService.getUsers()
@@ -23,14 +23,14 @@ var AllPostsComponent = (function () {
             _this.users = users;
         });
     };
-    return AllPostsComponent;
+    return RegisterComponent;
 }());
-AllPostsComponent = __decorate([
+RegisterComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
-        templateUrl: 'all-posts.component.html'
+        templateUrl: 'register.component.html'
     }),
     __metadata("design:paramtypes", [index_1.UserService])
-], AllPostsComponent);
-exports.AllPostsComponent = AllPostsComponent;
-//# sourceMappingURL=all-posts.component.js.map
+], RegisterComponent);
+exports.RegisterComponent = RegisterComponent;
+//# sourceMappingURL=register.component.js.map

@@ -1,6 +1,7 @@
 ﻿import { Routes, RouterModule } from '@angular/router';
 
 import { LoginComponent } from './login/index';
+import { RegisterComponent } from './register/index';
 import { HomeComponent } from './home/index';
 import { ManageUsersComponent } from './manage-users/index';
 import { AllContentComponent } from './manage-content/index';
@@ -12,6 +13,7 @@ import { AuthGuard } from './_guards/index';
 
 const appRoutes: Routes = [
     { path: 'login', component: LoginComponent },
+    { path: 'register', component: RegisterComponent },
     { path: 'users/all', component: ManageUsersComponent, canActivate: [AuthGuard] },
     { path: 'content/all', component: AllContentComponent, canActivate: [AuthGuard] },
     { path: 'pages/all', component: AllPagesComponent, canActivate: [AuthGuard] },

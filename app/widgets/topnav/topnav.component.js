@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var TopNavComponent = (function () {
     function TopNavComponent() {
         //TODO: update with real data
@@ -18,14 +18,14 @@ var TopNavComponent = (function () {
     TopNavComponent.prototype.changeSite = function (event) {
         this.currentSite = event.target.value;
     };
-    TopNavComponent = __decorate([
-        core_1.Component({
-            selector: 'topnav',
-            templateUrl: './app/widgets/topnav/topnav.component.html'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], TopNavComponent);
     return TopNavComponent;
 }());
+TopNavComponent = __decorate([
+    core_1.Component({
+        selector: 'topnav',
+        templateUrl: './app/widgets/topnav/topnav.component.html'
+    }),
+    __metadata("design:paramtypes", [])
+], TopNavComponent);
 exports.TopNavComponent = TopNavComponent;
 //# sourceMappingURL=topnav.component.js.map

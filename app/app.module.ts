@@ -17,6 +17,7 @@ import {HeaderNavComponent} from './widgets/headernav/index';
 import { AuthGuard } from './_guards/index';
 import { AuthenticationService, UserService } from './_services/index';
 import { LoginComponent } from './login/index';
+import { RegisterComponent } from './register/index';
 import { HomeComponent } from './home/index';
 import { ManageUsersComponent } from './manage-users/index';
 import { AllContentComponent } from './manage-content/index';
@@ -35,6 +36,7 @@ import { AllPostsComponent } from './manage-blog/index';
     declarations: [
         AppComponent,
         LoginComponent,
+        RegisterComponent,
         HomeComponent,
         ManageUsersComponent,
         AllContentComponent,

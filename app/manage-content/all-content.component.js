@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var index_1 = require('../_services/index');
+var core_1 = require("@angular/core");
+var index_1 = require("../_services/index");
 var AllContentComponent = (function () {
     function AllContentComponent(userService) {
         this.userService = userService;
@@ -23,14 +23,14 @@ var AllContentComponent = (function () {
             _this.users = users;
         });
     };
-    AllContentComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            templateUrl: 'all-content.component.html'
-        }), 
-        __metadata('design:paramtypes', [index_1.UserService])
-    ], AllContentComponent);
     return AllContentComponent;
 }());
+AllContentComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        templateUrl: 'all-content.component.html'
+    }),
+    __metadata("design:paramtypes", [index_1.UserService])
+], AllContentComponent);
 exports.AllContentComponent = AllContentComponent;
 //# sourceMappingURL=all-content.component.js.map

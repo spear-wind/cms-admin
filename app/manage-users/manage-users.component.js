@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var index_1 = require('../_services/index');
+var core_1 = require("@angular/core");
+var index_1 = require("../_services/index");
 var ManageUsersComponent = (function () {
     function ManageUsersComponent(userService) {
         this.userService = userService;
@@ -23,14 +23,14 @@ var ManageUsersComponent = (function () {
             _this.users = users;
         });
     };
-    ManageUsersComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            templateUrl: 'manage-users.component.html'
-        }), 
-        __metadata('design:paramtypes', [index_1.UserService])
-    ], ManageUsersComponent);
     return ManageUsersComponent;
 }());
+ManageUsersComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        templateUrl: 'manage-users.component.html'
+    }),
+    __metadata("design:paramtypes", [index_1.UserService])
+], ManageUsersComponent);
 exports.ManageUsersComponent = ManageUsersComponent;
 //# sourceMappingURL=manage-users.component.js.map
