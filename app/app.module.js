@@ -16,6 +16,7 @@ var http_1 = require("@angular/http");
 var index_1 = require("./_helpers/index");
 var testing_1 = require("@angular/http/testing");
 var http_2 = require("@angular/http");
+var equal_validator_directive_1 = require("./equal-validator.directive"); //custom equal validator
 var app_component_1 = require("./app.component");
 var app_routing_1 = require("./app.routing");
 var index_2 = require("./widgets/sidebar/index");
@@ -47,6 +48,7 @@ AppModule = __decorate([
         ],
         declarations: [
             app_component_1.AppComponent,
+            equal_validator_directive_1.EqualValidator,
             index_7.LoginComponent,
             index_8.RegisterComponent,
             index_9.HomeComponent,

@@ -8,6 +8,7 @@ import { fakeBackendProvider } from './_helpers/index';
 import { MockBackend, MockConnection } from '@angular/http/testing';
 import { BaseRequestOptions } from '@angular/http';
 
+import { EqualValidator } from './equal-validator.directive'; //custom equal validator
 import { AppComponent }  from './app.component';
 import { routing }        from './app.routing';
 import {SidebarComponent} from './widgets/sidebar/index';
@@ -35,6 +36,7 @@ import { AllPostsComponent } from './manage-blog/index';
     ],
     declarations: [
         AppComponent,
+        EqualValidator,
         LoginComponent,
         RegisterComponent,
         HomeComponent,

@@ -9,19 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var index_1 = require("../_services/index");
 var RegisterComponent = (function () {
-    function RegisterComponent(userService) {
-        this.userService = userService;
-        this.users = [];
+    function RegisterComponent() {
+        this.model = {};
+        this.loading = false;
+        this.error = '';
     }
     RegisterComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        // get users from secure api end point
-        this.userService.getUsers()
-            .subscribe(function (users) {
-            _this.users = users;
-        });
+    };
+    RegisterComponent.prototype.register = function () {
+        this.loading = true;
+        if (this.model.email == 'nick@imaginationdynamic.com') {
+            this.loading = false;
+            this.error = 'test error, cant use this email';
+        }
+        else {
+            this.loading = false;
+            this.error = 'user account created';
+        }
     };
     return RegisterComponent;
 }());
@@ -30,7 +35,7 @@ RegisterComponent = __decorate([
         moduleId: module.id,
         templateUrl: 'register.component.html'
     }),
-    __metadata("design:paramtypes", [index_1.UserService])
+    __metadata("design:paramtypes", [])
 ], RegisterComponent);
 exports.RegisterComponent = RegisterComponent;
 //# sourceMappingURL=register.component.js.map

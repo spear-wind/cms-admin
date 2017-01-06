@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SignUp } from '../_models/sign-up';
 
-import { User } from '../_models/index';
-import { UserService } from '../_services/index';
 
 @Component({
     moduleId: module.id,
@@ -9,15 +8,24 @@ import { UserService } from '../_services/index';
 })
 
 export class RegisterComponent implements OnInit {
-    users: User[] = [];
+    model: any = {};
+    loading = false;
+    error = '';
 
-    constructor(private userService: UserService) { }
+    constructor() { }
 
     ngOnInit() {
-        // get users from secure api end point
-        this.userService.getUsers()
-            .subscribe(users => {
-                this.users = users;
-            });
+
+    }
+
+    register() {
+        this.loading = true;
+        if(this.model.email == 'nick@imaginationdynamic.com') {
+            this.loading = false;
+            this.error = 'test error, cant use this email';
+        } else {
+            this.loading = false;
+            this.error = 'user account created';
+        }
     }
 }
